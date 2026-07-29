@@ -23,4 +23,4 @@ git commit -m "첫 커밋"
 
 푸시
 
-git push -u origin 브랜치명
+git push origin 브랜치명
