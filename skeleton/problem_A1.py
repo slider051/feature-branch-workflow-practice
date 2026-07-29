@@ -21,15 +21,18 @@ if file_path.exists():  # 파일 존재 여부 확인
     # 'item' 항목을 순회하며 각 도서의 'title' 값을 리스트에 추가합니다.
     book_titles = []  # 책 제목을 저장할 빈 리스트
     for item in data['item']:  # 'item' 리스트에서 각 항목을 순회
-        book_titles.append(item['name'])
+        book_titles.append(item['title'])
         # 책 제목을 리스트에 추가하는 코드 (book_titles.append)
 
     # 4. 결과 출력
     # 리스트에 저장된 책 제목을 출력합니다.
     print("책 제목 리스트:")
-    pass  # 책 제목을 출력하는 코드 (print(book_titles))
+    print(book_titles)
+    # 책 제목을 출력하는 코드 (print(book_titles))
 
 else:
+    # exist 가 없을 경우
+    print(f"파일이 존재하지 않습니다. : {file_path}")
     # 5. 파일이 없을 경우 처리
     # 파일이 존재하지 않으면 오류 메시지를 출력합니다.
-    pass  # 파일이 존재하지 않을 때의 처리 코드 (print(f"파일이 존재하지 않습니다: {file_path}"))
+    # 파일이 존재하지 않을 때의 처리 코드 (print(f"파일이 존재하지 않습니다: {file_path}"))
